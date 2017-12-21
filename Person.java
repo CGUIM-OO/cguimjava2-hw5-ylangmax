@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public abstract class Person {
 	private ArrayList<Card> oneRoundCard;
 	public void setOneRoundCard(ArrayList<Card> cards){
-		oneRoundCard=cards;
+		oneRoundCard=cards;//有一setOneRoundCard()，為oneRoundCard之setter，供後續程式使用
 	}
 	public ArrayList<Card> getOneRoundCard(){
 		return oneRoundCard;
@@ -42,7 +42,7 @@ public abstract class Person {
 		}
 		return hasAce;
 	}
-	public void printAllCard(){
+	public void printAllCard(){//有一printAllCard()，供後續程式使用
 		for(Card c : oneRoundCard){
 			c.printCard();
 		}
