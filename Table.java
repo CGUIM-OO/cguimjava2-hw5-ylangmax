@@ -54,7 +54,7 @@ public class Table {
 	private void ask_each_player_about_hits(){
 		for(int i =0;i<allPlayers.length;i++){
 			ArrayList<Card> allCard= new ArrayList<Card>();//暫存用，每次重新實體化
-			if(allPlayers[i].getTotalValue()<17||allPlayers[i].getOneRoundCard().size()==2){ //根據要牌原則判斷是否要hit!
+			if(allPlayers[i].getTotalValue()<17){ //根據要牌原則判斷是否要hit!
 			System.out.print("Hit! ");
 		}
 		while(allPlayers[i].hit_me(this)){  //判斷是否要牌，若符合要牌原則，則繼續要牌
